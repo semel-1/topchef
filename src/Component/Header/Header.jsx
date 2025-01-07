@@ -15,7 +15,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center bg-gray-800 py-5 px-6 text-white">
+    <header className="flex justify-between items-center bg-gray-800 py-7 px-6 text-white">
       {/* Logo Section */}
       <div className="flex items-center gap-3 text-yellow-300">
         <LocalDiningIcon fontSize={isMobile ? 'medium' : 'large'} />
@@ -23,8 +23,8 @@ export const Header = () => {
       </div>
 
       {/* Navigation Menu (Desktop) */}
-      <nav className="hidden md:flex items-center gap-6 text-lg text-gray-400">
-        <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform">
+      <nav className="hidden md:flex items-center gap-6 text-xl text-gray-400 ">
+        <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform ">
           Shop
         </a>
         <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform">
