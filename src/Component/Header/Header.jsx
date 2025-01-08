@@ -15,7 +15,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center bg-gray-800 py-7 px-6 text-white">
+    <header className="flex justify-between items-center bg-darkGray py-7 px-6 text-white">
       {/* Logo Section */}
       <div className="flex items-center gap-3 text-yellow-300">
         <LocalDiningIcon fontSize={isMobile ? 'medium' : 'large'} />
@@ -40,7 +40,7 @@ export const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <ul className="absolute top-[75px] right-2 w-48 bg-gray-800 text-white  shadow-lg md:hidden text-center">
+        <ul className="absolute top-[75px] right-2 w-48 bg-darkGray text-white  shadow-lg md:hidden text-center">
           <li className="px-4 py-2 border-b border-gray-500 hover:bg-gray-600 transition-colors">
             <a href="#">Shop</a>
           </li>

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      colors:{
+        darkGray: '#333333',
+      },
       backgroundImage: {
         HeroImg :  "url('/src/Component/Assets/HeroImg.webp')",
         HeroImg_1024 :  "url('/src/Component/Assets/HeroImg_1024.webp')",
