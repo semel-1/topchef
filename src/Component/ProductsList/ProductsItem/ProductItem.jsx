@@ -12,13 +12,13 @@ const ProductItem = ({ id, name, image, category, price }) => {
             className="w-full sm:w-fit h-56 object-cover rounded"
           />
         </div>
-        <h2 className="text-sm lg:text-lg md:text-base font-black mt-2 text-darkGray text-center ">
+        <h2 className="text-sm lg:text-lg md:text-base font-bold mt-2 text-darkGray text-center ">
           {name}
         </h2>
-        <p className="text-sm lg:text-lg md:text-base  font-semibold text-gray-600 capitalize text-center ">
+        <p className="text-sm lg:text-lg md:text-base font-normal text-gray-600 capitalize text-center ">
           {category}
         </p>
-        <p className="text-sm lg:text-lg md:text-base font-black text-yellow-500  text-center ">
+        <p className="text-sm lg:text-lg md:text-base font-bold text-yellow-500  text-center ">
           ${price}
         </p>
       </Link>
@@ -26,4 +26,4 @@ const ProductItem = ({ id, name, image, category, price }) => {
   );
 };
 
-export default ProductItem;
+export default  ProductItem ;

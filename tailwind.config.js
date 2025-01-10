@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        darkGray: '#333333',
+        darkGray: '#14100d',
       },
       backgroundImage: {
         HeroImg :  "url('/src/Component/Assets/HeroImg.webp')",
@@ -22,10 +22,12 @@ module.exports = {
           '0%': { transform: 'translateX(-300px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+     
       },
       animation: {
         slideLeft: 'slideLeft 1s ease-out',
         slideRight: 'slideRight 1s ease-out',
+
       },
     },
   },

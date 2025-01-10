@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Component/Hero/Hero";
 import ProductsList from "../Component/ProductsList/ProductsList";
 import allProducts from "../Component/Assets/Products/allProducts";
+import Story from "../Component/Story/Story";
 
 const Home = () => {
   const popular = allProducts.filter((product)=>
@@ -13,6 +14,7 @@ const Home = () => {
     <div>
       <Hero />
       <ProductsList listType={popular} title="Popular Dishes" />
+      <Story/>
     </div>
   );
 };

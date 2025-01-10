@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import ProductItem from "./ProductsItem/ProductItem";
 
 const ProductsList = ({ listType = [], title }) => {
@@ -42,8 +43,8 @@ const ProductsList = ({ listType = [], title }) => {
   }
 
   return (
-    <div className="relative bg-white text-center h-screen box-content">
-      <h1 className="mb-5 pt-24 text-darkGray font-bold text-2xl md:text-3xl lg:text-4xl ">
+    <div className="relative bg-white text-center py-24 box-content">
+      <h1 className="mb-5  text-darkGray font-bold text-2xl md:text-3xl lg:text-4xl ">
         {title}
       </h1>
       <hr className="mx-auto mb-16 h-1 w-1/2 bg-yellow-500 " />
@@ -60,21 +61,30 @@ const ProductsList = ({ listType = [], title }) => {
           style={{ transform: `translateX(${translateX}px)` }}
         >
           {listType.map((item) => (
-    <div
-      className="inline-block lg:w-80 md:w-64 w-56 whitespace-normal flex-shrink-0"
-      key={item.id}
-    >
-      <ProductItem
-        id={item.id}
-        name={item.name}
-        image={item.image}
-        category={item.category}
-        price={item.price}
-      />
-    </div>
-  ))}
+            <div
+              className="inline-block lg:w-80 md:w-64 w-56 whitespace-normal flex-shrink-0"
+              key={item.id}
+            >
+              <ProductItem
+                id={item.id}
+                name={item.name}
+                image={item.image}
+                category={item.category}
+                price={item.price}
+              />
+            </div>
+          ))}
         </div>
       </div>
+      <div className="mt-8">
+      <Link
+        to={"/products"}
+        className="text-sm md:text-base lg:text-lg font-bold text-yellow-500 hover:text-yellow-600 transition-colors duration-300"
+      >
+        View All Dishes >>>
+      </Link>
+      </div>
+      
     </div>
   );
 };
