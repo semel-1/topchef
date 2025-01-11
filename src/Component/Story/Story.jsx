@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import SectionHeader from "./SectionHeader/SectionHeader";
+import SectionHeader from "../SectionHeader/SectionHeader";
 import SkillBar from "../SkillBar/SkillBar";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import { motion } from "framer-motion";

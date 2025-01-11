@@ -4,20 +4,21 @@ import ProductsList from "../Component/ProductsList/ProductsList";
 import allProducts from "../Component/Assets/Products/allProducts";
 import Story from "../Component/Story/Story";
 import About from "../Component/About/About";
+import Menu from "../Component/Menu/Menu";
 
 const Home = () => {
   const popular = allProducts.filter((product)=>
     product.rate>4.5
   )
   
-
   return (
     <div>
       <Hero />
       <ProductsList listType={popular} title="Popular Dishes" />
       <Story/>
       <About/>
-      <div className="bg-darkGray h-screen "></div>
+      <Menu/>
+
     </div>
   );
 };
