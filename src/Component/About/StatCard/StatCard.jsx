@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 
 const StatCard = React.memo(({ icon, value, label, inView, duration }) => (
   <div
-    className="flex flex-col items-center bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105"
+    className="flex flex-col items-center bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 cursor-pointer"
     aria-label={`${label}: ${value}`}
   >
     <div className="mb-4">{icon}</div>
