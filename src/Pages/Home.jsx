@@ -5,6 +5,8 @@ import allProducts from "../Component/Assets/Products/allProducts";
 import Story from "../Component/Story/Story";
 import About from "../Component/About/About";
 import Menu from "../Component/Menu/Menu";
+import Contact from "../Component/Contact/Contact";
+
 
 const Home = () => {
   const popular = allProducts.filter((product)=>
@@ -18,6 +20,8 @@ const Home = () => {
       <Story/>
       <About/>
       <Menu/>
+
+      <Contact/>
 
     </div>
   );

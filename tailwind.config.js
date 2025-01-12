@@ -11,9 +11,14 @@ module.exports = {
         HeroImg_1024 :  "url('/src/Component/Assets/HeroImg_1024.webp')",
         HeroImg_768 :  "url('/src/Component/Assets/HeroImg_768.webp')",
         HeroImg_320 :  "url('/src/Component/Assets/HeroImg_320.webp')",
+
         AboutBG :  "url('/src/Component/Assets/About/AboutBG.webp')",
         AboutBG_1024 :  "url('/src/Component/Assets/About/AboutBG_1024.webp')",
         AboutBG_768 :  "url('/src/Component/Assets/About/AboutBG_768.webp')",
+
+        ContactBG: "url('/src/Component/Assets/Contact/contact.webp')",
+        ContactBG_1024: "url('/src/Component/Assets/Contact/contact_1024.webp')",
+        ContactBG_768: "url('/src/Component/Assets/Contact/contact_768.webp')",
       },
       keyframes: {
         slideLeft: {
