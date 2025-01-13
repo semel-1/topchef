@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionContent from "../SectionContent/SectionContent";
 import MenuItem from "./MenuItem/MenuItem";
 
 const images = [
@@ -13,7 +14,7 @@ const images = [
   { 
     src: require("../Assets/Menu/main.webp"), 
     alt: "Main", 
-    title: "Main ", 
+    title: "Main Dishes", 
     description: "Steaks / Grills / Pasta", 
     link: "/menu/main" 
   },
@@ -31,13 +32,11 @@ const Menu = () => {
     <div className="bg-darkGray px-4 py-12 md:px-6 lg:px-10 xl:px-16 lg:py-20 flex flex-col gap-8 lg:gap-16">
       <div className="flex flex-col lg:w-2/5 gap-6 lg:gap-8 justify-center">
         <SectionHeader text="Menus" />
-        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold leading-snug">
-          Our Menus
-        </h1>
-        <p className="text-gray-100 text-sm md:text-base lg:text-lg leading-relaxed">
-          Discover a variety of delicious options crafted to satisfy your cravings.
-          From sweet treats to hearty mains and refreshing beverages, we have something for everyone.
-        </p>
+        <SectionContent
+        title="Our Menus"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequatur incidunt voluptatum labore in vel tempora quam omnis maiores, inventore recusandae, quae tenetur excepturi. Qui ipsam magni quas molestiae deserunt?"
+      />
+      
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-16 md:px-5">

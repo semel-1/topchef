@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import SectionHeader from "../SectionHeader/SectionHeader";
+import SectionContent from "../SectionContent/SectionContent";
 import SkillBar from "../SkillBar/SkillBar";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import { motion } from "framer-motion";
@@ -33,18 +34,11 @@ const Story = () => {
         {/* Section Header */}
         <SectionHeader text="OUR STORY" />
 
-        {/* Title */}
-        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold leading-snug">
-          The Story
-        </h1>
-
-        {/* Description */}
-        <p className="text-gray-100 text-sm md:text-base lg:text-lg leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-          consequatur incidunt voluptatum labore in vel tempora quam omnis
-          maiores, inventore recusandae, quae tenetur excepturi. Qui ipsam magni
-          quas molestiae deserunt?
-        </p>
+        <SectionContent
+        title="The Story"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequatur incidunt voluptatum labore in vel tempora quam omnis maiores, inventore recusandae, quae tenetur excepturi. Qui ipsam magni quas molestiae deserunt?"
+      />
+     
 
         {/* Skills */}
         <div className="space-y-4">

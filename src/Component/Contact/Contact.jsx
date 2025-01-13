@@ -26,12 +26,12 @@ const Contact = () => {
     {
       Icon: QueryBuilderOutlinedIcon,
       title: "Business Hours",
-      details: ["Open 04:00 PM", "Closed 01:00 AM"],
+      details: ["Open 04:00 PM", "Close 01:00 AM"],
     },
   ];
 
   return (
-    <section className="relative w-full py-36 bg-gray-900">
+    <section className="relative w-full py-20 bg-gray-900">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-gray-900/50 z-10"></div>
 

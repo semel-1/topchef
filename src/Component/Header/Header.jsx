@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useMediaQuery } from '@mui/material';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,35 +24,35 @@ export const Header = () => {
       </div>
 
       {/* Navigation Menu (Desktop) */}
-      <nav className="hidden md:flex items-center gap-6 text-xl text-gray-400 ">
-        <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform ">
-          Shop
-        </a>
-        <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform">
-          Main
-        </a>
-        <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform">
-          Drinks
-        </a>
-        <a href="#" className="hover:text-white hover:-translate-y-1 transition-transform">
-          Dessert
-        </a>
+      <nav className="hidden md:flex items-center gap-6 text-xl text-gray-400">
+        <Link to="/" className="hover:text-white hover:-translate-y-1 transition-transform">
+          Home
+        </Link>
+        <Link to="/Menu" className="hover:text-white hover:-translate-y-1 transition-transform">
+          Menu
+        </Link>
+        <Link to="/Chef" className="hover:text-white hover:-translate-y-1 transition-transform">
+          Chef
+        </Link>
+        <Link to="/Book" className="hover:text-white hover:-translate-y-1 transition-transform">
+          Book
+        </Link>
       </nav>
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <ul className="absolute top-[75px] right-2 w-48 bg-darkGray text-white  shadow-lg md:hidden text-center">
+        <ul className="absolute top-[75px] right-2 w-48 bg-darkGray text-white shadow-lg md:hidden text-center">
           <li className="px-4 py-2 border-b border-gray-500 hover:bg-gray-600 transition-colors">
-            <a href="#">Shop</a>
+            <Link to="#">Shop</Link>
           </li>
           <li className="px-4 py-2 border-b border-gray-500 hover:bg-gray-600 transition-colors">
-            <a href="#">Main</a>
+            <Link to="#">Main</Link>
           </li>
           <li className="px-4 py-2 border-b border-gray-500 hover:bg-gray-600 transition-colors">
-            <a href="#">Drinks</a>
+            <Link to="#">Drinks</Link>
           </li>
           <li className="px-4 py-2 hover:bg-gray-600 transition-colors">
-            <a href="#">Dessert</a>
+            <Link to="#">Dessert</Link>
           </li>
         </ul>
       )}
