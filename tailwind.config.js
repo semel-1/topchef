@@ -19,6 +19,8 @@ module.exports = {
         ContactBG: "url('/src/Component/Assets/Contact/contact.webp')",
         ContactBG_1024: "url('/src/Component/Assets/Contact/contact_1024.webp')",
         ContactBG_768: "url('/src/Component/Assets/Contact/contact_768.webp')",
+
+        Main :  "url('/src/Component/Assets/Menu/main.webp')",
       },
       keyframes: {
         slideLeft: {
