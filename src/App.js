@@ -6,9 +6,9 @@ import Contact from "./Component/Contact/Contact";
 import Footer from './Component/Footer/Footer';
 
 import Home from './Pages/Home';
-import Chef from './Pages/Chef';
 import Menu from './Pages/Menu';
-
+import Chef from './Pages/Chef';
+import Reservation from './Pages/Reservation'
 
 const App = () => {
   return (
@@ -16,11 +16,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/Chef" element={<Chef/>} />
         <Route path="/Menu" element={<Menu/>} />
-
-
-        {/* <Route path="/product/:id" element={<ProductDetails />} /> */}
+        <Route path="/Chef" element={<Chef/>} />
+        <Route path="/Reservation" element={<Reservation/>} />
       </Routes>
       <Contact/>
       <Footer/>

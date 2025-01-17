@@ -33,7 +33,7 @@ const Chefs = () => {
         </h4>
         <hr className="w-10 md:w-12 lg:w-16 border-0 h-0.5 bg-yellow-300" />
       </div>
-      <div className="text-center w-2/5">
+      <div className="text-center w-3/5 lg:w-2/5  ">
         <SectionContent
           title="Behind The Kitchen"
           description="

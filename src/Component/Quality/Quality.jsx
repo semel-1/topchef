@@ -35,7 +35,7 @@ const Quality = () => {
   };
 
   return (
-    <section className="bg-darkGray px-4 py-12 md:px-6 lg:px-10 xl:px-16 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16">
+    <section className="bg-darkGray px-4 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16">
       {/* Text Section */}
       <div className="flex flex-col lg:w-2/5 gap-6 lg:gap-8 justify-center">
         <SectionHeader text="BEST QUALITY" />

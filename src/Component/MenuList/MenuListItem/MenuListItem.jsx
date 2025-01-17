@@ -35,21 +35,21 @@ const MenuListItem = (props) => {
         <h5 className="text-gray-200 text-lg font-medium">${props.price}</h5>
       </div>
       <hr className="flex w-full border-yellow-500 h-1" />
-      <div className="flex flex-row text-wrap">
+      <div className="flex flex-row flex-wrap">
         {Array.isArray(props.ingredients) ? (
-          props.ingredients.map((desc, index) =>
-            index === props.ingredients.length - 1 ? (
-              <p className="text-base text-gray-400 font-thin" key={index}>
-                {desc}
-              </p>
-            ) : (
-              <p className="text-base text-gray-400 font-thin" key={index}>
-                {desc}/
-              </p>
-            )
-          )
+          props.ingredients.map((desc, index) => (
+            <span
+              key={index}
+              className="text-base text-gray-400 font-thin"
+            >
+              {desc}
+              {index < props.ingredients.length - 1 && <span>/</span>}
+            </span>
+          ))
         ) : (
-          <p className="text-base text-gray-400 font-thin">{props.ingredients}</p>
+          <span className="text-base text-gray-400 font-thin">
+            {props.ingredients}
+          </span>
         )}
       </div>
     </div>
