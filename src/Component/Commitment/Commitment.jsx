@@ -35,7 +35,7 @@ const Commitment = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row bg-darkGray text-gray-200 px-4 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 gap-8 lg:gap-40">
+    <div className="flex flex-col lg:flex-row bg-darkGray text-gray-200 px-10 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 gap-8 lg:gap-40">
       <div className="flex flex-col w-full lg:w-3/5 gap-10">
         <img src={image1} alt="Friends sitting together" />
         <h3

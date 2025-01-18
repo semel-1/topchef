@@ -6,7 +6,7 @@ import Chefs from '../Component/Chefs/Chefs'
 const Chef = () => {
   return (
     <div>
-        <Background text ="our chef"/>
+        <Background text ="our chefs" image="ChefBG" />
         <Quality/>
         <Chefs/>
         

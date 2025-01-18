@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
-import PersonIcon from "@mui/icons-material/Person";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useMediaQuery } from "@mui/material";
@@ -18,7 +19,7 @@ export const Header = () => {
 
   const getLinkClass = (path) => {
     return location.pathname === path
-      ? "text-yellow-500 font-medium -translate-y-2 " // Active link style
+      ? `${isMobile ? "text-lg" : "text-2xl"} text-yellow-500`
       : "hover:text-white hover:-translate-y-1 transition-transform";
   };
 
@@ -48,10 +49,10 @@ export const Header = () => {
 
       {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
-        <nav className="absolute flex flex-col top-[75px] right-2 w-64 bg-darkGray text-white shadow-lg md:hidden text-center z-50">
+        <nav className="absolute flex flex-col top-[75px] right-2 w-64 bg-darkGray text-white shadow-lg md:hidden text-start z-50">
           <Link
             to="/"
-            className={`px-4 py-2 border-b border-yellow-500 ${getLinkClass(
+            className={`px-4 py-2 border-b border-[#3b3026] ${getLinkClass(
               "/"
             )}`}
           >
@@ -59,7 +60,7 @@ export const Header = () => {
           </Link>
           <Link
             to="/Menu"
-            className={`px-4 py-2 border-b border-yellow-500 ${getLinkClass(
+            className={`px-4 py-2 border-b border-[#3b3026] ${getLinkClass(
               "/Menu"
             )}`}
           >
@@ -67,7 +68,7 @@ export const Header = () => {
           </Link>
           <Link
             to="/Chef"
-            className={`px-4 py-2 border-b border-yellow-500 ${getLinkClass(
+            className={`px-4 py-2 border-b border-[#3b3026]  ${getLinkClass(
               "/Chef"
             )}`}
           >
@@ -96,8 +97,9 @@ export const Header = () => {
             <MenuIcon fontSize={isMobile ? "medium" : "large"} />
           )}
         </button>
-        <PersonIcon fontSize={isMobile ? "medium" : "large"} />
-        <ShoppingCartIcon fontSize={isMobile ? "medium" : "large"} />
+        <FacebookIcon fontSize={isMobile ? "small" : "medium"}  className="cursor-pointer hover:text-yellow-500"/>
+        <InstagramIcon fontSize={isMobile ? "small" : "medium"}  className="cursor-pointer hover:text-yellow-500" />
+        <TwitterIcon fontSize={isMobile ? "samll" : "medium"}   className="cursor-pointer hover:text-yellow-500"/>
       </div>
     </header>
   );

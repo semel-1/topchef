@@ -273,52 +273,6 @@ const allProducts = [
     rate: null,
   },
 
-  // New Desserts
-  {
-    id: 29,
-    name: "Pork Tenderloin Marinated In Yogurt",
-    category: "dessert",
-    ingredients: ["Pork", "Tenderloin", "Yogurt"],
-    price: 25.0,
-    image: null,
-    rate: null,
-  },
-  {
-    id: 30,
-    name: "Grilled Pork With Preserved Lemons",
-    category: "dessert",
-    ingredients: ["Pork", "Lemon", "Onions"],
-    price: 27.0,
-    image: null,
-    rate: null,
-  },
-  {
-    id: 31,
-    name: "Roasted Prawns with Coriander",
-    category: "dessert",
-    ingredients: ["Prawn", "Coriander", "Spices"],
-    price: 18.0,
-    image: null,
-    rate: null,
-  },
-  {
-    id: 32,
-    name: "Prawn Sausage Cassoulet",
-    category: "dessert",
-    ingredients: ["Prawn", "Sausage", "Tomato"],
-    price: 19.0,
-    image: null,
-    rate: null,
-  },
-  {
-    id: 33,
-    name: "Citrus Cured Salmon With Honey",
-    category: "dessert",
-    ingredients: ["Salmon", "Citrus", "Honey", "Spice"],
-    price: 20.0,
-    image: null,
-    rate: null,
-  },
   
 ];
 

@@ -21,13 +21,13 @@ const Story = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.6,
+    threshold: 0.5,
   });
 
   return (
     <section
       ref={ref}
-      className="bg-darkGray px-4 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16"
+      className="bg-darkGray px-10 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16"
     >
       {/* Text and Skills Section */}
       <div className="flex flex-col lg:w-2/5 gap-6 lg:gap-8 justify-center">

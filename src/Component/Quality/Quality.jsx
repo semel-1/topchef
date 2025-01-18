@@ -35,7 +35,7 @@ const Quality = () => {
   };
 
   return (
-    <section className="bg-darkGray px-4 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16">
+    <section className="bg-darkGray px-10 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col lg:flex-row gap-8 lg:gap-16">
       {/* Text Section */}
       <div className="flex flex-col lg:w-2/5 gap-6 lg:gap-8 justify-center">
         <SectionHeader text="BEST QUALITY" />
@@ -51,12 +51,12 @@ const Quality = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-full lg:w-3/5 flex justify-center items-end relative">
+      <div className="w-full lg:w-3/5 flex flex-col-reverse md:flex-row lg:flex-row justify-center items-center md:items-end lg:items-end relative">
         <motion.img
           ref={ref}
           src={image_2}
           alt="Professional Chef Cooking"
-          className="lg:w-[40vh] lg:h-[50vh] w-[30vh] h-[40vh] md:w-[35vh] md:h-[45vh] rounded-lg flex mb-10 -mr-28 md:-mr-20 z-10"
+          className="lg:w-[40vh] lg:h-[50vh] w-[30vh] h-[40vh] md:w-[35vh] md:h-[45vh] rounded-lg flex -mt-52 mr-[40%] lg:mb-10 md:mb-10 lg:-mr-28 md:-mr-20 z-10"
           {...motionConfig}
         />
         <img

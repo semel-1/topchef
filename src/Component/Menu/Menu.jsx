@@ -9,27 +9,28 @@ const images = [
     alt: "Desserts", 
     title: "Desserts", 
     description: "Ice Cream / Cake / Pudding", 
-    link: "/menu/desserts" 
+    link: "/menu#dessert" 
   },
   { 
     src: require("../Assets/Menu/main.webp"), 
     alt: "Main", 
     title: "Main Dishes", 
     description: "Steaks / Grills / Pasta", 
-    link: "/menu/main" 
+    link: "/menu#main" 
   },
   { 
     src: require("../Assets/Menu/drinks.webp"), 
     alt: "Drinks", 
     title: "Drinks", 
     description: "Cocktail / Juices / Hot Beverages", 
-    link: "/menu/drinks" 
+    link: "/menu#drink" 
   },
 ];
 
+
 const Menu = () => {
   return (
-    <div className="bg-darkGray px-4 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col gap-8 lg:gap-16">
+    <div className="bg-darkGray px-10 py-12 md:px-6 lg:px-10 xl:px-28 lg:py-20 flex flex-col gap-8 lg:gap-16">
       <div className="flex flex-col lg:w-2/5 gap-6 lg:gap-8 justify-center">
         <SectionHeader text="Menus" />
         <SectionContent

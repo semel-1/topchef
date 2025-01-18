@@ -16,11 +16,16 @@ module.exports = {
         AboutBG_1024 :  "url('/src/Component/Assets/About/AboutBG_1024.webp')",
         AboutBG_768 :  "url('/src/Component/Assets/About/AboutBG_768.webp')",
 
+
+        MenuBG :  "url('/src/Component/Assets/Menu/MenuBG.webp')",
+        ChefBG :  "url('/src/Component/Assets/Chef/ChefBG.webp')",
+        ReserveBG :  "url('/src/Component/Assets/Reserve/ReserveBG.webp')",
+
+
         ContactBG: "url('/src/Component/Assets/Contact/contact.webp')",
         ContactBG_1024: "url('/src/Component/Assets/Contact/contact_1024.webp')",
         ContactBG_768: "url('/src/Component/Assets/Contact/contact_768.webp')",
 
-        Main :  "url('/src/Component/Assets/Menu/main.webp')",
       },
       keyframes: {
         slideLeft: {

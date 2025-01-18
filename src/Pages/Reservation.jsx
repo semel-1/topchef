@@ -6,7 +6,7 @@ import Commitment from "../Component/Commitment/Commitment";
 const Reservation = () => {
   return (
     <div>
-      <Background text="RESERVATION" />
+      <Background text="RESERVATION" image="ReserveBG" />
       <ReserveTable />
       <Commitment/>
     </div>
