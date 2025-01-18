@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/topchef/static/css/main.5d05c157.css",
-    "main.js": "/topchef/static/js/main.c014a31a.js",
+    "main.js": "/topchef/static/js/main.c14fbee5.js",
     "static/media/DrinkBG.webp": "/topchef/static/media/DrinkBG.87606590db2aaee2ddae.webp",
     "static/media/tacos.webp": "/topchef/static/media/tacos.1881c43fedf4eaf35286.webp",
     "static/media/penne-carbonara-pasta.webp": "/topchef/static/media/penne-carbonara-pasta.5fdbb1c65e2f5519aa4d.webp",
@@ -50,10 +50,10 @@
     "static/media/lemonade.webp": "/topchef/static/media/lemonade.add11b0547309737056c.webp",
     "index.html": "/topchef/index.html",
     "main.5d05c157.css.map": "/topchef/static/css/main.5d05c157.css.map",
-    "main.c014a31a.js.map": "/topchef/static/js/main.c014a31a.js.map"
+    "main.c14fbee5.js.map": "/topchef/static/js/main.c14fbee5.js.map"
   },
   "entrypoints": [
     "static/css/main.5d05c157.css",
-    "static/js/main.c014a31a.js"
+    "static/js/main.c14fbee5.js"
   ]
 }
