@@ -33,7 +33,7 @@ export const Header = () => {
 
       {/* Navigation Menu (Desktop) */}
       <nav className="hidden md:flex items-center gap-6 text-xl text-gray-400">
-        <Link to="/" className={getLinkClass("/")}>
+        <Link to="/topchef" className={getLinkClass("/topchef")}>
           Home
         </Link>
         <Link to="/Menu" className={getLinkClass("/Menu")}>
@@ -51,9 +51,9 @@ export const Header = () => {
       {isMenuOpen && (
         <nav className="absolute flex flex-col top-[75px] right-2 w-64 bg-darkGray text-white shadow-lg md:hidden text-start z-50">
           <Link
-            to="/"
+            to="/topchef"
             className={`px-4 py-2 border-b border-[#3b3026] ${getLinkClass(
-              "/"
+              "/topchef"
             )}`}
           >
             Home
